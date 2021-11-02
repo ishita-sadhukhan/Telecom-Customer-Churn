@@ -15,3 +15,6 @@ Low switching costs for customers (supported by government regulations) mean tha
 2. What are the payment habits for churning customers
 3. Whether ...
 4. 
+
+# Data Collection
+The dataset is downloaded from IBM datasets on telecom data. It contains around 7000 customer records with 21 features such as demograhic features : gender, do the partner or depents, service related- how many services they use, what types of services they use ad billing information : whaht is their paymont mode, what is their contract type etc. . The machine learning model will be able to identify future customers who are probable to churn
