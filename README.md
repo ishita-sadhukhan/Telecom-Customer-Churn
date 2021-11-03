@@ -32,10 +32,13 @@ Here in this [notebook]() I do basic exploratory data analysis on the dataset to
 **1. Tenure and Churning**- A large proportion of the customers either have a very short duration (< 3 months) or a quite long duration ( >5 years).
 Churning customers have much lower tenure with a median of 10 months compared to a median of 38 months for non churners. Business can pay attention to customers who are about to complete 10 months
 ![image](https://user-images.githubusercontent.com/49127037/139969885-ceca3cc2-cebe-4e6b-a223-d1505a37eaf0.png)
-We also see that about 60% of churning happens in the 1st month of the customer tenure, and post 5 months churning starts to stable and cuts down to just 35%. There can be multiple reasons for this.
-
-Perhaps the joining offers given to a customer is just given for the first month and after that connection price becomes so high that customer tends to leave. In this case business can increase the duration of the  joining offer at least for 3-6 months and monitor the customer's usage and based on that offer them special offers.
+We also see that about 60% of churning happens in the 1st month of the customer tenure, and post 5 months churning starts to stable and cuts down to just 35%. 
 ![image](https://user-images.githubusercontent.com/49127037/139970514-e2240abb-98b4-4ad1-b142-723f913ea091.png)
+
+Also, The churn rate is highest, almost 50% for the customers with less than a year of tenure
+![image](https://user-images.githubusercontent.com/49127037/140003057-9608571b-c950-4132-a47b-ef1b860f1e69.png)
+
+There can be multiple reasons for this.Perhaps the joining offers given to a customer is just given for the first month and after that connection price becomes so high that customer tends to leave. In this case business can increase the duration of the  joining offer at least for 3-6 months and monitor the customer's usage and based on that offer them special offers.
 
 **2. Monthly Charges and Churning**- Majority of the Churning customers have higher monthly charges with a median of $80. For non-churners, it is within $60. Business can keep a tab on the customers who are paying higher monthly charge and promote special bundle offers helping them curb these charges
 ![image](https://user-images.githubusercontent.com/49127037/139970272-fc93326f-8374-4f38-bca4-bcedd4d27b66.png)
@@ -60,6 +63,10 @@ Several reasons are possible: may be, lower cost substitutes from competitors or
 **8. Contract Type and Churn Rate** - A majority, almost 55% of the clients have opted Month-To-Month Contract type, but 43% has left the company. This churn rate is 14.3 times more than clients with 2-Year Contract and 4 times more than clients with 1-Yr Contract. This is quite a flag for the business. Without any contract holding them back, customers can easily change mobile operators. This means they have little loyalty to brands, and bad experiences can spread more rapidly. Business can target these month-to-month contractors with some subsidized cost Year-contracts and check the conversion rates
 ![image](https://user-images.githubusercontent.com/49127037/140001033-aa47bc58-4b8a-45ea-9fd6-7ef09b326ebb.png)
 
+It is seen, with Month-to-month contract, for the majority of the clients, the tenure duration is quite low. But if the contract type is 2 years, majority of the customers have a longer tenure.
+![image](https://user-images.githubusercontent.com/49127037/140002409-ec4800e3-fcdc-49f2-bd72-bfd1062a54e0.png)
+
+
 **9. Paperless Billing** - Almost 60% of the customers prefers paperless billing, however, the churning rate is 2 times more than customers who prefer Paper Billing. Business can provide Paperless Billing customers with the option of converting to Paper Billings and get feedback
 ![image](https://user-images.githubusercontent.com/49127037/140001875-88d7da37-006e-4413-aa46-ccc270fe8610.png)
 
@@ -67,6 +74,18 @@ Several reasons are possible: may be, lower cost substitutes from competitors or
 **10. Payment method** - 30% of the client base has opted for payment in Electronic Check payments, however almost 45% of them has churned.  Electronic-Check Payment customers can be offered with options of automatic payment modes such as Credit Card payments or Bank Transfer which has much lower churning rate
 ![image](https://user-images.githubusercontent.com/49127037/140001972-a87c3f42-d91f-4c68-97ff-e912564bc51c.png)
 
+
+
+
+# Feature Engineering and Data Preprocessing
+In this notebook I have tried following things :
+
+* Created few features with the help of existing features , so as to derive more information to feed into the model . I have also created few graphs for data visualization to see how this new features are defining the price of the house
+* Created dummy variables for the categorical features.
+* A heatmap of the correlation between price and other features is produced to understand which features are highly correlated with price
+
+## Features used for the model
+The important features which are used in building models are # of bedrooms, area of the living room, location of the homes in the County, age of the buildings etc. As we have seen from the data exploration, these features have significant importance in terms of pricing of a house and thus can contribute in predicting future house price.
 
 
 
