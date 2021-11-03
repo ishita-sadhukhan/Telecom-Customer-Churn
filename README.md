@@ -47,6 +47,11 @@ Perhaps the joining offers given to a customer is just given for the first month
 **4. Parter, Dependents and Churn Rate** - Having no Partner or dependents, definitely increases the probability to churn
 ![image](https://user-images.githubusercontent.com/49127037/139983901-42a06852-ed00-4b9e-9bf0-7f97baff446a.png)
 
+**5. Internet Service and Churn Rate** - Clients with Fiber optic internet service is _**2.2 times**_ more probable to leave the company than clients with DSL Internet service. Also,  the share of clients with Fiber optic internet comprises  44% of the clients base. This indicator is quite significant. Again several reasons are possible: may be, lower cost substitutes from competitors or the service is not smooth. Business can target these customers with feedback mails.
+![image](https://user-images.githubusercontent.com/49127037/139998616-7533b479-f3f3-4a98-a763-cba0f482867c.png)
+
+
+
 
 
 
