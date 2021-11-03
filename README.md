@@ -3,12 +3,11 @@ Predicting customer churn using machine learning and python
 
 # Business Problem
 
-A teleommunication company (Telco Co.) has a churn problem as 24% of it's customers churned in the last period. Telco Co. has contracted with me on a project to build a predictive model that meets the following business requireents:
+A teleommunication company (Telco Co.) , who sells residential Voice and Internet services has a massive churn problem as 24% of it's customers churned in the last period.TelCo wants to deploy customer retention strategies by using a predictive model and has contracted with me that meets the following business requireents:
 
 * Find the best prediction model to classify customer churn risk
-* Model performance should do significantly better than no model
-* Deliverables should explain the relative influence that each predictor has on the overall model predictions
-* Deliverables should suggest potential solutions to reducing customer churn
+* Explain the relative influence of each predictor on the model’s predictions
+* Suggest potential approaches to reduce customer churn
 
 ## Executive Summary
 Telco Co. provided select, historical data on 7,043 customers including an indicator as to whether each customer churned. After analyzing and transforming the data, we optimized several classification models. Each model was trained on 70% of the historical data and then tested on remaining 30% test data. Gradient Boosting Model with **84% Recall and 75% AUC is selected as the best model**
@@ -167,10 +166,17 @@ So without any model, the **baseline model has a recall = 0.56**. Using resampli
 
 ![image](https://user-images.githubusercontent.com/49127037/140027442-770fd38a-f759-462a-a7ab-4cff348a847c.png)
 
-**3. Feature Importance** - No machine learning algorithm is complete without knowing which features have the most contribution in the model. We see that features like latitude and longitude i.e the location of the house,the size of the interior living area, grade and condition of the house, and average size of a room are important features to look at while predicting the house price at King County. Real Estate investors can pay special attention to these features and see how these features are correlated with price, and then take their business decisions so as to where to invest and where to spend money
+**3. Feature Importance** - According to the model, follwoing are the key features in determinig customer churn:
 
-
-
+- Contract length: Month-to-month contracts churn much more than 1- or 2-year contracts
+- Dependents: Customers supporting dependents (kids/elders etc) churned less
+- Internet services: Internet Fiber or DSL services churned worse than other services
+- Charges : Customers with high monthly charges (>$80)  churns more comparitively to average monthly charges(<$60)
+- Security: Customers not availing Security Services are 3 times more probable to churn
+- Tenure Months : Customers with Tenure less than 12 months has higher chance to leave the company
+- Streams: Customer using streaming of TV or Movies on Internet service have greater probabilty to churn
+- 
+![image](https://user-images.githubusercontent.com/49127037/140232778-53081b8b-6006-485a-98f8-4c339f2fcf6e.png)
 
 ## Cost Evaluation
 Cost evaluation is explored to  understand the cost implications after implementing the model.  Following cost are attributed on the results of confusion matrix.
@@ -183,7 +189,9 @@ Cost evaluation is explored to  understand the cost implications after implement
 
 Using a probablility of churning threshold at 0.5, the business will be able to save $135K/month savings over no model in place, and will be able to save $66K/month over spending money on retention effort for all customers . If lower threshhold, more optimization on cost savings
 
+## Next Steps
 
+Telcos typically have much more data available that could be included in the analysis, like extended customer and transaction data from CRM systems and operational data around network services provided. Also they typically have much larger amounts of churn/non-churn events at their disposal than the ca. 7000 in this case example. With those, neural networks could be properly trained to detect more complex patterns in data and achieve higher accuracies. A high accuracy is needed to be able to identify promising customer cases where churn can be avoided as, eventually, the customer returns protected need to outweigh the costs of related retention campaigns.
 
 
 
