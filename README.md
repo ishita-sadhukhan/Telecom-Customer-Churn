@@ -100,7 +100,22 @@ The important features which are used in building models are Tenure Hroup, Type 
 ![image](https://user-images.githubusercontent.com/49127037/140008015-720c700f-037d-4eaa-9244-a22c903c3338.png)
 
 
+# Training models and evaluation and hyperparameter- tuning
+Built models and then evaluate them in this [notebook](). Steps I have done are :
 
+* Dividing the data into two parts: training and test. To find the model, I used the training set and finally test the model on unseen data, which is the test set
+* Because of class imbalance, creating 3 samples using resampling techniques
+* Creating a baseline model using the Logistic regression on the original sample. Recall and Area under the curve (AUC) is the evaluation metric. Other complex models will be tested against the baseline model
+* 3 models are fitted and one with balance of highest recall and AUC is chosen as the final model
+* Hyperparameter tuning of the best models and finally testing on the unseen data
+* Getting the feature importance of the model which shows, which features have contributed the most to the final model
+
+## Model Findings
+1. Baseline model : A baseline model using Logistic Regession on the original sample is fitted .
+Because
+The Recall score = 0.55. This means....
+
+2. Final Model : 
 
 
 
