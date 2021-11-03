@@ -95,7 +95,10 @@ In this [notebook]() I have tried following things :
 * A correlation figure between churn and other features is produced to understand which features are highly correlated
 
 ## Features used for the model
-The important features which are used in building models are # of bedrooms, area of the living room, location of the homes in the County, age of the buildings etc. As we have seen from the data exploration, these features have significant importance in terms of pricing of a house and thus can contribute in predicting future house price.
+The important features which are used in building models are Tenure Hroup, Type of Internet Service, Customer's payment type etc.  As we have seen from the data exploration and the correlation graph, these features have significant importance in predicting the probability of customer leaving the company
+
+![image](https://user-images.githubusercontent.com/49127037/140008015-720c700f-037d-4eaa-9244-a22c903c3338.png)
+
 
 
 
