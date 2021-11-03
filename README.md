@@ -25,6 +25,7 @@ Here in this [notebook]() I do basic exploratory data analysis on the dataset to
 * Checking missing values and treating them 
 * Analazing  the numerical feature distribution
 * Analysis all features with respect to churn
+* Performing K-means clustering to understand churning behaviour
 * In depth visualizations to have good understanding of the customer base
 
 ## Data Findings
@@ -41,6 +42,11 @@ There can be multiple reasons for this.Perhaps the joining offers given to a cus
 
 **2. Monthly Charges and Churning**- Majority of the Churning customers have higher monthly charges with a median of $80. For non-churners, it is within $60. Business can keep a tab on the customers who are paying higher monthly charge and promote special bundle offers helping them curb these charges
 ![image](https://user-images.githubusercontent.com/49127037/139970272-fc93326f-8374-4f38-bca4-bcedd4d27b66.png)
+
+**3.Tenure and Monthly Charge** - A k- means clustering on Tenure and Monthly charges for churned customers show that  a significant numer of relatively new customers but those who have subscribed to more services ( having higer monthly charges) are the ones who are more likely to leave. Business can try to offer a promotional subsidized extra services plan, so that new customers can enjoy the services by paying cheaper and not leave the company
+
+![image](https://user-images.githubusercontent.com/49127037/140007278-adf8d3fa-1c6c-4cb3-8ad7-8632d03d0513.png)
+
 
 **3. Senior/Non-Senior citizens and Churn Rate** - Churn rate is higher for senior citizen customers. Since, the share of senior citizens is about 16% from the total amount of clients, this indicator requires further research with additional data. This indicator is significant and should be taken into account when creating a loyalty program
 ![image](https://user-images.githubusercontent.com/49127037/139981788-95ce0335-27ec-4f7e-926f-b50028177531.png)
@@ -76,7 +82,9 @@ It is seen, with Month-to-month contract, for the majority of the clients, the t
 **11. Customers availing multiple services and churning** - The figure shows that customers availing just one service has greater percentage of churning compared to customers availing all 6.They might be hesitant to cancel a contract, when they depend on the additional service components (e.g. security ,backup etc).
 ![image](https://user-images.githubusercontent.com/49127037/140006164-889bd430-eaf5-412d-9923-d1c9f7a55cb7.png)
 
-**1 . Services which has the highest churners** - Through this figure, we see that clients opting for Streaming Tv and Movies, see the highest churning. With more data, we can analyse how much extra they are paying for these services, and if these extra cost is driving them to leave the company
+**12 . Services which has the highest churners** - Through this figure, we see that clients opting for Streaming Tv and Movies, see the highest churning. With more data, we can analyse how much extra they are paying for these services, and if these extra cost is driving them to leave the company
+
+
 ![image](https://user-images.githubusercontent.com/49127037/140006194-8c21d1ac-cc2c-449c-8fed-49814ce3efcb.png)
 
 # Feature Engineering and Data Preprocessing
