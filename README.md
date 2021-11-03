@@ -37,7 +37,6 @@ We also see that about 60% of churning happens in the 1st month of the customer 
 Perhaps the joining offers given to a customer is just given for the first month and after that connection price becomes so high that customer tends to leave. In this case business can increase the duration of the  joining offer at least for 3-6 months and monitor the customer's usage and based on that offer them special offers.
 ![image](https://user-images.githubusercontent.com/49127037/139970514-e2240abb-98b4-4ad1-b142-723f913ea091.png)
 
-
 **2. Monthly Charges and Churning**- Majority of the Churning customers have higher monthly charges with a median of $80. For non-churners, it is within $60. Business can keep a tab on the customers who are paying higher monthly charge and promote special bundle offers helping them curb these charges
 ![image](https://user-images.githubusercontent.com/49127037/139970272-fc93326f-8374-4f38-bca4-bcedd4d27b66.png)
 
@@ -50,6 +49,10 @@ Perhaps the joining offers given to a customer is just given for the first month
 **5. Internet Service and Churn Rate** - Clients with Fiber optic internet service is _**2.2 times**_ more probable to leave the company than clients with DSL Internet service. Also,  the share of clients with Fiber optic internet comprises  44% of the clients base. This indicator is quite significant. Again several reasons are possible: may be, lower cost substitutes from competitors or the service is not smooth. Business can target these customers with feedback mails.
 ![image](https://user-images.githubusercontent.com/49127037/139998616-7533b479-f3f3-4a98-a763-cba0f482867c.png)
 
+**6. Online Security ,Tech Support and Churn Rate** - Almost 50% of the Clients do not avail Online security and Tech support, and these customers are almost 3 times more probable to leave, compared to customers who availing these services. Business can target these customers by offering cheap options of security plans and time to time customer support
+![image](https://user-images.githubusercontent.com/49127037/139999687-9c4b7b4f-3cea-4d8f-903f-d4abdd6ad926.png)
+
+**7. Online Backup,Device Protection and Churn Rate** - Almost 45% customers prefer no Online Backup and Device protection services, and the churn rate is 1.7 times more than the clients who prefers these services. The business can create programs where they can offer these customers some cheap promotion offers and then monitor their behaviour
 
 
 
