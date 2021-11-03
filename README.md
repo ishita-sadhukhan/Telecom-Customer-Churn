@@ -43,6 +43,20 @@ Low switching costs for customers (supported by government regulations) mean tha
 2. What are the payment habits for churning customers?
 3. How does customer lifespan matters in terms of identifying churns? etc
 
+# Data Collection
+Given the lack of publically available customer data, I am using the IBM Cognos Telco Customer Churn simulated data set which contains labeled churn for around 7000 customers. Following the data related information: 
+
+  Customer — 7043 unique customers customer tenure ranging from 0 to 72 months
+  
+  Demographic — Four useful customer demographic fields
+  
+  Service — Billable services (Internet splits to Fiber, DSL or None) and two streaming indicators
+  
+  Billing — Includes contract type, billing configuration and billed charges
+  
+  Churn — Churn value/ Churn Label
+
+
 # Exploratory Data Analysis with Vizualization
 Here in this [notebook]() I do basic exploratory data analysis on the dataset to get an understanding of the data. Python packages like matplotlib and seaborn are used. Things covered :
 
