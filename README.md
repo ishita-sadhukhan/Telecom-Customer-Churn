@@ -28,10 +28,12 @@ Telco Co. provided select, historical data on 7,043 customers including an indic
   * (Low) Streams: Customer using streaming of TV or Movies on Internet service have greater probabilty to churn
 
 
-#### Gradient Boosting Key Metrics (Averages)
+#### Gradient Boosting Key Metrics
 
+* 53.6% improvement over baseline model
 * 84% Recall means model predicts 84% of customer churn cases correctly
 * 75% AUC indicates model is correct on nearly 3 out of 4 customers cases
+* Using a probablility of churning threshold at 0.5, the business will be able to save $135K/month savings over no model in place, and will be able to save $66K/month over spending money on retention effort for all customers 
 * This model will be socialized with Telco Co. and then refined based on feedback before moving towards deploying this into the business.
 
 
@@ -165,7 +167,24 @@ So without any model, the **baseline model has a recall = 0.56**. Using resampli
 
 ![image](https://user-images.githubusercontent.com/49127037/140027442-770fd38a-f759-462a-a7ab-4cff348a847c.png)
 
-**3.Cost assumptions**- A cost assumption is explored to understand the cost implications of implementing the model
+**3. Feature Importance** - No machine learning algorithm is complete without knowing which features have the most contribution in the model. We see that features like latitude and longitude i.e the location of the house,the size of the interior living area, grade and condition of the house, and average size of a room are important features to look at while predicting the house price at King County. Real Estate investors can pay special attention to these features and see how these features are correlated with price, and then take their business decisions so as to where to invest and where to spend money
+
+
+
+
+## Cost Evaluation
+Cost evaluation is explored to  understand the cost implications after implementing the model.  Following cost are attributed on the results of confusion matrix.
+
+* **TN : USD 0** - The model correctly identified a loyal customer, in this case, business does not bear any action cost
+* **FN : USD 500** - As we have discussed earlier, False negatives have grave implications because acquiring a replacement customer and all other associated costs are huge. Business approximately pay, example 500 for each customer where the model incorrectly predicts that a customer will stay
+* **TP and FP : USD 100** -  Model predicts these customers as churning, so business puts in a retention cost such as setting up few promotions, ad cost etc of an amount of say 100 USD per customer . Three scenarios are soughted and following is the Cost to Company and savings.
+
+![image](https://user-images.githubusercontent.com/49127037/140232268-48a6a46b-5ab6-411a-98b4-d5c2f2729961.png)
+
+Using a probablility of churning threshold at 0.5, the business will be able to save $135K/month savings over no model in place, and will be able to save $66K/month over spending money on retention effort for all customers . If lower threshhold, more optimization on cost savings
+
+
+
 
 
 
