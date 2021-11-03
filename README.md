@@ -28,6 +28,10 @@ Here in this [notebook]() I do basic exploratory data analysis on the dataset to
 * Analysis all features with respect to churn
 * In depth visualizations to have good understanding of the customer base
 
+## Data Findings
+
+
+
 
 
 
