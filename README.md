@@ -87,6 +87,7 @@ It is seen, with Month-to-month contract, for the majority of the clients, the t
 ![image](https://user-images.githubusercontent.com/49127037/140001972-a87c3f42-d91f-4c68-97ff-e912564bc51c.png)
 
 **11. Customers availing multiple services and churning** - The figure shows that customers availing just one service has greater percentage of churning compared to customers availing all 6.They might be hesitant to cancel a contract, when they depend on the additional service components (e.g. security ,backup etc).
+
 ![image](https://user-images.githubusercontent.com/49127037/140006164-889bd430-eaf5-412d-9923-d1c9f7a55cb7.png)
 
 **12 . Services which has the highest churners** - Through this figure, we see that clients opting for Streaming Tv and Movies, see the highest churning. With more data, we can analyse how much extra they are paying for these services, and if these extra cost is driving them to leave the company
@@ -117,13 +118,30 @@ Built models and then evaluate them in this [notebook](). Steps I have done are 
 * Hyperparameter tuning of the best models and finally testing on the unseen data
 * Getting the feature importance of the model which shows, which features have contributed the most to the final model
 
+## Evaluation metric
+* Recall
+* ROC/AUC
 
-## Model Findings
-1. Baseline model : A baseline model using Logistic Regession on the original sample is fitted on the SMOTE sample. 
-Because
-The Recall score = 0.55. This means....
 
-2. Final Model : 
+## Models
+**1. Baseline model** : A Logistic Regression model using Logistic Regession on 4 samples 
+
+Sample | Recall
+------------ | -------------
+Original Sample | 0.56
+Resample using Upsampling minority class | 0.80
+Resample using SMOTE | 0.83
+Resample using Downsampling majority class | 0.80
+
+So without any model, the **baseline model has a recall = 0.56**. Using resampling technique using SMOTE, 3 models (Logistic Regression,Random Forest Classifier, Gradient Boosting Classifier are fit to improve the recall and also optimizing the Area under the Curve ( AUC)
+
+**2. Final Model** : **Gradient Boosting is choosen as the final model, based on Recall score and AUC**
+
+![image](https://user-images.githubusercontent.com/49127037/140026315-4eb20389-9151-4cc3-9e63-1337b0e6c854.png)
+**Gradient Boosting Confusion Matrix :**
+
+![image](https://user-images.githubusercontent.com/49127037/140027442-770fd38a-f759-462a-a7ab-4cff348a847c.png)
+
 
 
 
