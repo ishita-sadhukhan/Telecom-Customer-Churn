@@ -112,7 +112,7 @@ Built models and then evaluate them in this [notebook](). Steps I have done are 
 
 * Dividing the data into two parts: training and test. To find the model, I used the training set and finally test the model on unseen data, which is the test set
 * Because of class imbalance, creating 3 samples using resampling techniques
-* Creating a baseline model using the Logistic regression on the original sample. Recall and Area under the curve (AUC) is the evaluation metric. Other complex models will be tested against the baseline model
+* Creating a baseline model using the Logistic regression on the original sample. Recall and Area under the curve (AUC) is the evaluation metric. Other complex models will be     tested against the baseline model
 * 3 models are fitted and one with balance of highest recall and AUC is chosen as the final model
 * Hyperparameter tuning of the best models and finally testing on the unseen data
 * Getting the feature importance of the model which shows, which features have contributed the most to the final model
