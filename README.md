@@ -3,22 +3,47 @@ Predicting customer churn using machine learning and python
 
 # Business Problem
 
-# How can a telecom industry identify customers who are churning and stop them?
+A teleommunication company (Telco Co.) has a churn problem as 24% of it's customers churned in the last period. Telco Co. has contracted with me on a project to build a predictive model that meets the following business requireents:
 
-Customer loyalty is the key to profitability in the telecom industry. A telecom business sector can use this model to early identify customers who are most likely to leave their service and take preventive measures in order to retain them. Promotions and various discounted offers are often send to customers, however, customers who are probable churn require special attention. This machine learning model takes into different into different factors such as  demographic information , nilling services etc,analyzes all these factors throughly with  visualization and statistical models, and thereby solves a huge problem of the telecom business.
+* Find the best prediction model to classify customer churn risk
+* Model performance should do significantly better than no model
+* Deliverables should explain the relative influence that each predictor has on the overall model predictions
+* Deliverables should suggest potential solutions to reducing customer churn
+
+## Executive Summary
+Telco Co. provided select, historical data on 7,043 customers including an indicator as to whether each customer churned. After analyzing and transforming the data, we optimized several classification models. Each model was trained on 70% of the historical data and then tested on remaining 30% test data. Gradient Boosting Model with **84% Recall and 75% AUC is selected as the best model**
+
+### Model Gradient Boost Summary
+
+#### Target Variable: Churn Indicator/Churn Value
+
+  Predictor Features (Strength):
+
+  * (Strong) Contract length: Month-to-month contracts churn much more than 1- or 2-year contracts
+  * (Strong) Dependents: Customers supporting dependents (kids/elders etc) churned less
+  * (Moderate) Internet services: Internet Fiber or DSL services churned worse than other services
+  * (Moderate) Charges : Customers with high monthly charges (>$80)  churns more comparitively to average monthly charges(<$60)
+  * (Moderate) Security: Customers not availing Security Services are 3 times more probable to churn
+  * (Moderate) Tenure Months : Customers with Tenure less than 12 months has higher chance to leave the company
+  * (Low) Streams: Customer using streaming of TV or Movies on Internet service have greater probabilty to churn
+
+
+#### Gradient Boosting Key Metrics (Averages)
+
+* 84% Recall means model predicts 84% of customer churn cases correctly
+* 75% AUC indicates model is correct on nearly 3 out of 4 customers cases
+* This model will be socialized with Telco Co. and then refined based on feedback before moving towards deploying this into the business.
+
 
 # Introduction
 
-Low switching costs for customers (supported by government regulations) mean that customer loyalty is the only real tool that telecom companies must have to reduce their churn rates.  Connected data, used to improve service quality, dynamically adjust pricing/promotions, and offer personalized content to consumers, enable telecom providers to influence customer loyalty and increase customer retention directly.A machine learning algorithm on historical data will help the business to understand the customers well. It can address various questions such as :
+Low switching costs for customers (supported by government regulations) mean that customer loyalty is the only real tool that telecom companies must have to reduce their churn rates.  Connected data, used to improve service quality, dynamically adjust pricing/promotions, and offer personalized content to consumers, enable telecom providers to influence customer loyalty and increase customer retention directly.A machine learning algorithm on historical data will help the Telco to understand the customers well. It will address various questions such as :
 1. Which customers are more probable to churn
 2. What are the payment habits for churning customers?
 3. How does customer lifespan matters in terms of identifying churns? etc
 
-# Data Collection
-The dataset is downloaded from IBM datasets on telecom data. It contains around 7000 customer records with 21 features such as demograhic features : gender, do the partner or depents, service related- how many services they use, what types of services they use ad billing information : whaht is their paymont mode, what is their contract type etc. . The machine learning model will be able to identify future customers who are probable to churn
-
 # Exploratory Data Analysis with Vizualization
-Here in this [notebook]() I do basic exploratory data analysis on the dataset to get an understanding of the data. Python packages like matplotlib and seaborn are used. Things I covered :
+Here in this [notebook]() I do basic exploratory data analysis on the dataset to get an understanding of the data. Python packages like matplotlib and seaborn are used. Things covered :
 
 * Getting an understanding of the data
 * Checking missing values and treating them 
