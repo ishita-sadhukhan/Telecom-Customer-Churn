@@ -60,6 +60,14 @@ Several reasons are possible: may be, lower cost substitutes from competitors or
 **8. Contract Type and Churn Rate** - A majority, almost 55% of the clients have opted Month-To-Month Contract type, but 43% has left the company. This churn rate is 14.3 times more than clients with 2-Year Contract and 4 times more than clients with 1-Yr Contract. This is quite a flag for the business. Without any contract holding them back, customers can easily change mobile operators. This means they have little loyalty to brands, and bad experiences can spread more rapidly. Business can target these month-to-month contractors with some subsidized cost Year-contracts and check the conversion rates
 ![image](https://user-images.githubusercontent.com/49127037/140001033-aa47bc58-4b8a-45ea-9fd6-7ef09b326ebb.png)
 
+**9. Paperless Billing** - Almost 60% of the customers prefers paperless billing, however, the churning rate is 2 times more than customers who prefer Paper Billing. Business can provide Paperless Billing customers with the option of converting to Paper Billings and get feedback
+![image](https://user-images.githubusercontent.com/49127037/140001875-88d7da37-006e-4413-aa46-ccc270fe8610.png)
+
+
+**10. Payment method** - 30% of the client base has opted for payment in Electronic Check payments, however almost 45% of them has churned.  Electronic-Check Payment customers can be offered with options of automatic payment modes such as Credit Card payments or Bank Transfer which has much lower churning rate
+![image](https://user-images.githubusercontent.com/49127037/140001972-a87c3f42-d91f-4c68-97ff-e912564bc51c.png)
+
+
 
 
 
