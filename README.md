@@ -10,10 +10,9 @@ Customer loyalty is the key to profitability in the telecom industry. A telecom 
 # Introduction
 
 Low switching costs for customers (supported by government regulations) mean that customer loyalty is the only real tool that telecom companies must have to reduce their churn rates.  Connected data, used to improve service quality, dynamically adjust pricing/promotions, and offer personalized content to consumers, enable telecom providers to influence customer loyalty and increase customer retention directly.A machine learning algorithm on historical data will help the business to understand the customers well. It can address various questions such as :
-1. Which customers are more probablo churn
-2. What are the payment habits for churning customers
-3. Whether ...
-4. 
+1. Which customers are more probable to churn
+2. What are the payment habits for churning customers?
+3. How does customer lifespan matters in terms of identifying churns? etc
 
 # Data Collection
 The dataset is downloaded from IBM datasets on telecom data. It contains around 7000 customer records with 21 features such as demograhic features : gender, do the partner or depents, service related- how many services they use, what types of services they use ad billing information : whaht is their paymont mode, what is their contract type etc. . The machine learning model will be able to identify future customers who are probable to churn
@@ -30,11 +29,10 @@ Here in this [notebook]() I do basic exploratory data analysis on the dataset to
 
 ## Data Findings
 
-### Class Imbalance : Customer Churning Rate: 24%¶
-There is a class imbalance , distribution of records across the classes( Churn/Non-Churned) is not equal. Imbalanced classifications pose a challenge for predictive modeling as most of the machine learning algorithms used for classification were designed around the assumption of an equal number of examples for each class. This results in models that have poor predictive performance,specifically for the minority class (Churn)
+### Class Imbalance : Customer Churning Rate: 24%
+There is a class imbalance , ie distribution of records across the classes( Churn/Non-Churned) is not equal. Imbalanced classifications pose a challenge for predictive modeling as most of the machine learning algorithms used for classification were designed around the assumption of an equal number of examples for each class. This results in models that have poor predictive performance,specifically for the minority class (Churn)
 
-![image](https://user-images.githubusercontent.com/49127037/140023847-a63d1477-261a-404e-9399-cd027dd1905e.png)
-
+![image](https://user-images.githubusercontent.com/49127037/140165675-6111c524-e74a-4180-a299-00dff7933425.png)
 
 **1. Tenure and Churning**- A large proportion of the customers either have a very short duration (< 3 months) or a quite long duration ( >5 years).
 Churning customers have much lower tenure with a median of 10 months compared to a median of 38 months for non churners. Business can pay attention to customers who are about to complete 10 months
