@@ -29,6 +29,13 @@ Here in this [notebook]() I do basic exploratory data analysis on the dataset to
 * In depth visualizations to have good understanding of the customer base
 
 ## Data Findings
+
+### Class Imbalance : Customer Churning Rate: 24%¶
+There is a class imbalance , distribution of records across the classes( Churn/Non-Churned) is not equal. Imbalanced classifications pose a challenge for predictive modeling as most of the machine learning algorithms used for classification were designed around the assumption of an equal number of examples for each class. This results in models that have poor predictive performance,specifically for the minority class (Churn)
+
+![image](https://user-images.githubusercontent.com/49127037/140023847-a63d1477-261a-404e-9399-cd027dd1905e.png)
+
+
 **1. Tenure and Churning**- A large proportion of the customers either have a very short duration (< 3 months) or a quite long duration ( >5 years).
 Churning customers have much lower tenure with a median of 10 months compared to a median of 38 months for non churners. Business can pay attention to customers who are about to complete 10 months
 ![image](https://user-images.githubusercontent.com/49127037/139969885-ceca3cc2-cebe-4e6b-a223-d1505a37eaf0.png)
@@ -100,7 +107,7 @@ The important features which are used in building models are Tenure Hroup, Type 
 ![image](https://user-images.githubusercontent.com/49127037/140008015-720c700f-037d-4eaa-9244-a22c903c3338.png)
 
 
-# Training models and evaluation and hyperparameter- tuning
+# Training models,evaluation and hyperparametertuning
 Built models and then evaluate them in this [notebook](). Steps I have done are :
 
 * Dividing the data into two parts: training and test. To find the model, I used the training set and finally test the model on unseen data, which is the test set
@@ -110,8 +117,9 @@ Built models and then evaluate them in this [notebook](). Steps I have done are 
 * Hyperparameter tuning of the best models and finally testing on the unseen data
 * Getting the feature importance of the model which shows, which features have contributed the most to the final model
 
+
 ## Model Findings
-1. Baseline model : A baseline model using Logistic Regession on the original sample is fitted .
+1. Baseline model : A baseline model using Logistic Regession on the original sample is fitted on the SMOTE sample. 
 Because
 The Recall score = 0.55. This means....
 
