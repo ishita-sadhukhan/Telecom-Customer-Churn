@@ -142,6 +142,8 @@ So without any model, the **baseline model has a recall = 0.56**. Using resampli
 
 ![image](https://user-images.githubusercontent.com/49127037/140027442-770fd38a-f759-462a-a7ab-4cff348a847c.png)
 
+**3.Cost assumptions- A cost assumption is explored to understand the cost implications of implementing the model
+
 
 
 
