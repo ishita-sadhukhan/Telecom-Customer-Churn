@@ -7,7 +7,6 @@ Predicting customer churn using machine learning and python
 
 Customer loyalty is the key to profitability in the telecom industry. A telecom business sector can use this model to early identify customers who are most likely to leave their service and take preventive measures in order to retain them. Promotions and various discounted offers are often send to customers, however, customers who are probable churn require special attention. This machine learning model takes into different into different factors such as  demographic information , nilling services etc,analyzes all these factors throughly with  visualization and statistical models, and thereby solves a huge problem of the telecom business.
 
-
 # Introduction
 
 Low switching costs for customers (supported by government regulations) mean that customer loyalty is the only real tool that telecom companies must have to reduce their churn rates.  Connected data, used to improve service quality, dynamically adjust pricing/promotions, and offer personalized content to consumers, enable telecom providers to influence customer loyalty and increase customer retention directly.A machine learning algorithm on historical data will help the business to understand the customers well. It can address various questions such as :
@@ -74,15 +73,18 @@ It is seen, with Month-to-month contract, for the majority of the clients, the t
 **10. Payment method** - 30% of the client base has opted for payment in Electronic Check payments, however almost 45% of them has churned.  Electronic-Check Payment customers can be offered with options of automatic payment modes such as Credit Card payments or Bank Transfer which has much lower churning rate
 ![image](https://user-images.githubusercontent.com/49127037/140001972-a87c3f42-d91f-4c68-97ff-e912564bc51c.png)
 
+**11. Customers availing multiple services and churning** - The figure shows that customers availing just one service has greater percentage of churning compared to customers availing all 6.They might be hesitant to cancel a contract, when they depend on the additional service components (e.g. security ,backup etc).
+![image](https://user-images.githubusercontent.com/49127037/140006164-889bd430-eaf5-412d-9923-d1c9f7a55cb7.png)
 
-
+**1 . Services which has the highest churners** - Through this figure, we see that clients opting for Streaming Tv and Movies, see the highest churning. With more data, we can analyse how much extra they are paying for these services, and if these extra cost is driving them to leave the company
+![image](https://user-images.githubusercontent.com/49127037/140006194-8c21d1ac-cc2c-449c-8fed-49814ce3efcb.png)
 
 # Feature Engineering and Data Preprocessing
-In this notebook I have tried following things :
+In this [notebook]() I have tried following things :
 
-* Created few features with the help of existing features , so as to derive more information to feed into the model . I have also created few graphs for data visualization to see how this new features are defining the price of the house
+* Created few features with the help of existing features , so as to derive more information to feed into the model . I have also created few graphs for data visualization to see how this new features are defining the churning rate
 * Created dummy variables for the categorical features.
-* A heatmap of the correlation between price and other features is produced to understand which features are highly correlated with price
+* A correlation figure between churn and other features is produced to understand which features are highly correlated
 
 ## Features used for the model
 The important features which are used in building models are # of bedrooms, area of the living room, location of the homes in the County, age of the buildings etc. As we have seen from the data exploration, these features have significant importance in terms of pricing of a house and thus can contribute in predicting future house price.
