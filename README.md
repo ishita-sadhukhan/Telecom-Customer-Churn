@@ -204,10 +204,8 @@ Cost evaluation is explored to  understand the cost implications after implement
 Using a probablility of churning threshold at 0.5, the business will be able to save $135K/month savings over no model in place, and will be able to save $66K/month over spending money on retention effort for all customers . If lower threshhold, more optimization on cost savings
 
 ## Next Steps
-
-Telcos typically have much more data available that could be included in the analysis, like extended customer and transaction data from CRM systems and operational data around network services provided. Also they typically have much larger amounts of churn/non-churn events at their disposal than the ca. 7000 in this case example. With those, neural networks could be properly trained to detect more complex patterns in data and achieve higher accuracies. A high accuracy is needed to be able to identify promising customer cases where churn can be avoided as, eventually, the customer returns protected need to outweigh the costs of related retention campaigns.
-
-
+We’ve seen how some basic data may be enough to predict customer churn with enough precision to take action. With more information like Service Utilizatio, Contacts/Call/Emails, 
+Lifetime Customer Value, Competitor Coverage a lot more insights can be driven . Also with more data volume, advanced models like neural network can be trained to detect more complex patterns in data and achieve higher accuracies.
 
 
 
