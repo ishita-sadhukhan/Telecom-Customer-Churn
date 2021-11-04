@@ -3,7 +3,7 @@ Predicting customer churn using machine learning and python
 
 # Business Problem
 
-A teleommunication company (Telco Co.) , who sells residential Voice and Internet services has a massive churn problem as 24% of it's customers churned in the last period.TelCo wants to deploy customer retention strategies by using a predictive model and has contracted with me that meets the following business requireents:
+A telecommunication company (Telco Co.) , who sells residential Voice and Internet services has a massive churn problem as 24% of it's customers churned in the last period.TelCo wants to deploy customer retention strategies by using a predictive model and has contracted with me that meets the following business requireents:
 
 * Find the best prediction model to classify customer churn risk
 * Explain the relative influence of each predictor on the model’s predictions
@@ -38,13 +38,13 @@ Telco Co. provided select, historical data on 7,043 customers including an indic
 
 # Introduction
 
-Low switching costs for customers (supported by government regulations) mean that customer loyalty is the only real tool that telecom companies must have to reduce their churn rates.  Connected data, used to improve service quality, dynamically adjust pricing/promotions, and offer personalized content to consumers, enable telecom providers to influence customer loyalty and increase customer retention directly.A machine learning algorithm on historical data will help the Telco to understand the customers well. It will address various questions such as :
+Low switching costs for customers (supported by government regulations) mean that customer loyalty is the only real tool that telecom companies must have to reduce their churn rates.  Improving service quality, dynamically adjust pricing/promotions, and offer personalized content to consumers, enable telecom providers to influence customer loyalty and increase customer retention directly.A machine learning algorithm on historical data will help Telco to understand the customers well. It will address various questions such as :
 1. Which customers are more probable to churn
 2. What are the payment habits for churning customers?
 3. How does customer lifespan matters in terms of identifying churns? etc
 
 # Data Collection
-Given the lack of publically available customer data, I am using the IBM Cognos Telco Customer Churn simulated data set which contains labeled churn for around 7000 customers. Following the data related information: 
+Given the lack of publically available customer data, I am using the IBM Cognos Telco Customer Churn simulated data set which contains labeled churn for around 7000 customers. Following is the data related information: 
 
   Customer — 7043 unique customers customer tenure ranging from 0 to 72 months
   
