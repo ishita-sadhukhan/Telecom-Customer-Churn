@@ -58,7 +58,7 @@ Given the lack of publically available customer data, I am using the IBM Cognos 
 
 
 # Exploratory Data Analysis with Vizualization
-Here in this [notebook]() I do basic exploratory data analysis on the dataset to get an understanding of the data. Python packages like matplotlib and seaborn are used. Things covered :
+Here in this [notebook](https://github.com/ishita-sadhukhan/Telecom-Customer-Churn/blob/main/code%20notebooks/1.%20Data%20exploration%20and%20Data%20Cleaning.ipynb) I do basic exploratory data analysis on the dataset to get an understanding of the data. Python packages like matplotlib and seaborn are used. Things covered :
 
 * Getting an understanding of the data
 * Checking missing values and treating them 
@@ -70,14 +70,14 @@ Here in this [notebook]() I do basic exploratory data analysis on the dataset to
 ## Data Findings
 
 ### Class Imbalance : Customer Churning Rate: 24%
-There is a class imbalance , ie distribution of records across the classes( Churn/Non-Churned) is not equal. Imbalanced classifications pose a challenge for predictive modeling as most of the machine learning algorithms used for classification were designed around the assumption of an equal number of examples for each class. This results in models that have poor predictive performance,specifically for the minority class (Churn)
+There is a class imbalance , ie distribution of records across the classes( Churn/Non-Churned) is not equal. Imbalanced classifications pose a challenge for predictive modeling as most of the machine learning algorithms used for classification were designed around the assumption of an equal number of examples for each class. This results in models that have poor predictive performance,specifically for the minority class (Churn). This situation is handled while doing the model building exercise
 
 ![image](https://user-images.githubusercontent.com/49127037/140165675-6111c524-e74a-4180-a299-00dff7933425.png)
 
 **1. Tenure and Churning**- A large proportion of the customers either have a very short duration (< 3 months) or a quite long duration ( >5 years).
 Churning customers have much lower tenure with a median of 10 months compared to a median of 38 months for non churners. Business can pay attention to customers who are about to complete 10 months
 ![image](https://user-images.githubusercontent.com/49127037/139969885-ceca3cc2-cebe-4e6b-a223-d1505a37eaf0.png)
-We also see that about 60% of churning happens in the 1st month of the customer tenure, and post 5 months churning starts to stable and cuts down to just 35%. 
+We also see that about 60% of churning happens in the 1st month of the customer tenure, and post 5 months churning starts to stable and cuts down to almost 35%. 
 ![image](https://user-images.githubusercontent.com/49127037/139970514-e2240abb-98b4-4ad1-b142-723f913ea091.png)
 
 Also, The churn rate is highest, almost 50% for the customers with less than a year of tenure
@@ -88,7 +88,7 @@ There can be multiple reasons for this.Perhaps the joining offers given to a cus
 **2. Monthly Charges and Churning**- Majority of the Churning customers have higher monthly charges with a median of $80. For non-churners, it is within $60. Business can keep a tab on the customers who are paying higher monthly charge and promote special bundle offers helping them curb these charges
 ![image](https://user-images.githubusercontent.com/49127037/139970272-fc93326f-8374-4f38-bca4-bcedd4d27b66.png)
 
-**3.Tenure and Monthly Charge** - A k- means clustering on Tenure and Monthly charges for churned customers show that  a significant numer of relatively new customers but those who have subscribed to more services ( having higer monthly charges) are the ones who are more likely to leave. Business can try to offer a promotional subsidized extra services plan, so that new customers can enjoy the services by paying cheaper and not leave the company
+**3.Tenure and Monthly Charge** - A k- means clustering on Tenure and Monthly charges for churned customers show that  a significant number of relatively new customers but those who have subscribed to more services ( having higer monthly charges) are the ones who are more likely to leave. Business can try to offer a promotional subsidized additional services plan, so that new customers can enjoy the services by paying cheaper and not leave the company
 
 ![image](https://user-images.githubusercontent.com/49127037/140007278-adf8d3fa-1c6c-4cb3-8ad7-8632d03d0513.png)
 
@@ -104,13 +104,13 @@ There can be multiple reasons for this.Perhaps the joining offers given to a cus
 Several reasons are possible: may be, lower cost substitutes from competitors or the service is not smooth. Business can target these customers with feedback mails.
 ![image](https://user-images.githubusercontent.com/49127037/139998616-7533b479-f3f3-4a98-a763-cba0f482867c.png)
 
-**6. Online Security ,Tech Support and Churn Rate** - Almost 50% of the Clients do not avail Online security and Tech support, and these customers are almost 3 times more probable to leave, compared to customers who availing these services. Business can target these customers by offering cheap options of security plans and time to time customer support
+**6. Online Security ,Tech Support and Churn Rate** - Almost 50% of the Clients do not avail Online security and Tech support, and these customers are **almost 3 times more probable to leave**, compared to customers who availing these services. Business can target these customers by offering cheap options of security plans and time to time customer support
 ![image](https://user-images.githubusercontent.com/49127037/139999687-9c4b7b4f-3cea-4d8f-903f-d4abdd6ad926.png)
 
-**7. Online Backup,Device Protection and Churn Rate** - Almost 45% customers prefer no Online Backup and Device protection services, and the churn rate is _**1.7 times**_ more than the clients who prefers these services. The business can create programs where they can offer these customers some cheap promotion offers and then monitor their behaviour
+**7. Online Backup,Device Protection and Churn Rate** - Almost 45% customers prefer no Online Backup and Device protection services, and the churn rate is _**1.7 times**_ more than the clients who prefers these services. The business can create programs where they can offer these customers some cheap promotion offers on these products and then monitor their behaviour
 ![image](https://user-images.githubusercontent.com/49127037/140000119-1b073d80-f113-4675-8be4-a2f00621eb38.png)
 
-**8. Contract Type and Churn Rate** - A majority, almost 55% of the clients have opted Month-To-Month Contract type, but 43% has left the company. This churn rate is 14.3 times more than clients with 2-Year Contract and 4 times more than clients with 1-Yr Contract. This is quite a flag for the business. Without any contract holding them back, customers can easily change mobile operators. This means they have little loyalty to brands, and bad experiences can spread more rapidly. Business can target these month-to-month contractors with some subsidized cost Year-contracts and check the conversion rates
+**8. Contract Type and Churn Rate** - A majority, almost 55% of the clients have opted Month-To-Month Contract type, but 43% has left the company. This churn rate is **14.3 times more than clients with 2-Year Contract and 4 times more than clients with 1-Yr Contract**. This is quite a flag for the business. Without any contract holding them back, customers can easily change mobile operators. This means they have little loyalty to brands, and bad experiences can spread more rapidly. Business can target these month-to-month contractors with some subsidized cost Year-contracts and check the conversion rates
 ![image](https://user-images.githubusercontent.com/49127037/140001033-aa47bc58-4b8a-45ea-9fd6-7ef09b326ebb.png)
 
 It is seen, with Month-to-month contract, for the majority of the clients, the tenure duration is quite low. But if the contract type is 2 years, majority of the customers have a longer tenure.
@@ -134,7 +134,7 @@ It is seen, with Month-to-month contract, for the majority of the clients, the t
 ![image](https://user-images.githubusercontent.com/49127037/140006194-8c21d1ac-cc2c-449c-8fed-49814ce3efcb.png)
 
 # Feature Engineering and Data Preprocessing
-In this [notebook]() I have tried following things :
+In this [notebook](https://github.com/ishita-sadhukhan/Telecom-Customer-Churn/blob/main/code%20notebooks/2.%20Feature%20Engineering%20and%20Data%20Preprocessing.ipynb) I have tried following things :
 
 * Created few features with the help of existing features , so as to derive more information to feed into the model . I have also created few graphs for data visualization to see how this new features are defining the churning rate
 * Created dummy variables for the categorical features.
