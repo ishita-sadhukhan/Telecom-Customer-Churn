@@ -141,17 +141,17 @@ In this [notebook](https://github.com/ishita-sadhukhan/Telecom-Customer-Churn/bl
 * A correlation figure between churn and other features is produced to understand which features are highly correlated
 
 ## Features used for the model
-The important features which are used in building models are Tenure Hroup, Type of Internet Service, Customer's payment type etc.  As we have seen from the data exploration and the correlation graph, these features have significant importance in predicting the probability of customer leaving the company
+The important features which are used in building models are Tenure group, Type of Internet Service, Customer's payment type etc.  As we have seen from the data exploration and the correlation graph, these features have significant importance in predicting the probability of customer leaving the company
 
 ![image](https://user-images.githubusercontent.com/49127037/140008015-720c700f-037d-4eaa-9244-a22c903c3338.png)
 
 
 # Training models,evaluation and hyperparametertuning
-Built models and then evaluate them in this [notebook](). Steps I have done are :
+Built models and then evaluate them in this [notebook](https://github.com/ishita-sadhukhan/Telecom-Customer-Churn/blob/main/code%20notebooks/3.%20Models%2C%20Hyperparameter%20tuning%20and%20cost%20evaluation.ipynb). Steps I have done are :
 
 * Dividing the data into two parts: training and test. To find the model, I used the training set and finally test the model on unseen data, which is the test set
 * Because of class imbalance, creating 3 samples using resampling techniques
-* Creating a baseline model using the Logistic regression on the original sample. Recall and Area under the curve (AUC) is the evaluation metric. Other complex models will be     tested against the baseline model
+* Creating a baseline model using Logistic regression on the original sample. Recall and Area under the curve (AUC) is the evaluation metric. Other complex models will be     tested against the baseline model
 * 3 models are fitted and one with balance of highest recall and AUC is chosen as the final model
 * Hyperparameter tuning of the best models and finally testing on the unseen data
 * Getting the feature importance of the model which shows, which features have contributed the most to the final model
@@ -162,16 +162,18 @@ Built models and then evaluate them in this [notebook](). Steps I have done are 
 
 
 ## Models
-**1. Baseline model** : A Logistic Regression model using Logistic Regession on 4 samples 
+**1. Baseline model** : A Logistic Regression model is trained on  on 4 training samples and their recall values are noted:
 
 Sample | Recall
 ------------ | -------------
-Original Sample | 0.56
+**Original Sample** | **0.56**
 Resample using Upsampling minority class | 0.80
-Resample using SMOTE | 0.83
+**Resample using SMOTE** | **0.83**
 Resample using Downsampling majority class | 0.80
 
-So without any model, the **baseline model has a recall = 0.56**. Using resampling technique using SMOTE, 3 models (Logistic Regression,Random Forest Classifier, Gradient Boosting Classifier are fit to improve the recall and also optimizing the Area under the Curve ( AUC)
+So without doing any treatment on the data, the **baseline model has a recall = 0.56**. 
+
+And SMOTE sample returns highest recall value. Based on this exercise, using resampling technique using SMOTE, 3 models (Logistic Regression,Random Forest Classifier, Gradient Boosting Classifier are fit to improve the recall and also optimizing the Area under the Curve ( AUC)
 
 **2. Final Model** : **Gradient Boosting is choosen as the final model, based on Recall score and AUC**
 
@@ -180,7 +182,7 @@ So without any model, the **baseline model has a recall = 0.56**. Using resampli
 
 ![image](https://user-images.githubusercontent.com/49127037/140027442-770fd38a-f759-462a-a7ab-4cff348a847c.png)
 
-**3. Feature Importance** - According to the model, follwoing are the key features in determinig customer churn:
+**3. Feature Importance** - According to the model, following are the key features in determining customer churn:
 
 - Contract length: Month-to-month contracts churn much more than 1- or 2-year contracts
 - Dependents: Customers supporting dependents (kids/elders etc) churned less
@@ -189,23 +191,22 @@ So without any model, the **baseline model has a recall = 0.56**. Using resampli
 - Security: Customers not availing Security Services are 3 times more probable to churn
 - Tenure Months : Customers with Tenure less than 12 months has higher chance to leave the company
 - Streams: Customer using streaming of TV or Movies on Internet service have greater probabilty to churn
-- 
+
 ![image](https://user-images.githubusercontent.com/49127037/140232778-53081b8b-6006-485a-98f8-4c339f2fcf6e.png)
 
 ## Cost Evaluation
 Cost evaluation is explored to  understand the cost implications after implementing the model.  Following cost are attributed on the results of confusion matrix.
 
 * **TN : USD 0** - The model correctly identified a loyal customer, in this case, business does not bear any action cost
-* **FN : USD 500** - As we have discussed earlier, False negatives have grave implications because acquiring a replacement customer and all other associated costs are huge. Business approximately pay, example 500 for each customer where the model incorrectly predicts that a customer will stay
+* **FN : USD 500** - As we have discussed earlier, False negatives have grave implications because acquiring a replacement customer and all other associated costs are huge. Business approximately pay, example USD 500 for each customer where the model incorrectly predicts that a customer will stay
 * **TP and FP : USD 100** -  Model predicts these customers as churning, so business puts in a retention cost such as setting up few promotions, ad cost etc of an amount of say 100 USD per customer . Three scenarios are soughted and following is the Cost to Company and savings.
 
-![image](https://user-images.githubusercontent.com/49127037/140232268-48a6a46b-5ab6-411a-98b4-d5c2f2729961.png)
+![image](https://user-images.githubusercontent.com/49127037/140242854-d44abd1a-b63d-4c3b-848f-3f35cac4f465.png)
 
-Using a probablility of churning threshold at 0.5, the business will be able to save $135K/month savings over no model in place, and will be able to save $66K/month over spending money on retention effort for all customers . If lower threshhold, more optimization on cost savings
+Using a probablility of churning threshold at 0.5, the business will be able to save $135K/month savings over no model in place, and will be able to save $66K/month over spending money on retention effort for all customers . If lower threshhold, more optimization can be done to on cost savings
 
 ## Next Steps
-We’ve seen how some basic data may be enough to predict customer churn with enough precision to take action. With more information like Service Utilizatio, Contacts/Call/Emails, 
-Lifetime Customer Value, Competitor Coverage a lot more insights can be driven . Also with more data volume, advanced models like neural network can be trained to detect more complex patterns in data and achieve higher accuracies.
+We’ve seen how some basic data may be enough to predict customer churn with enough precision to take action. With more information like Service Utilization, Contacts/Call/Emails, Lifetime Customer Value, Competitor Coverage a lot more insights can be driven . Also with more data volume, advanced models like neural network can be trained to detect more complex patterns in data and achieve higher accuracies.
 
 
 
