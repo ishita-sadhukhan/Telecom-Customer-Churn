@@ -10,7 +10,7 @@ A teleommunication company (Telco Co.) , who sells residential Voice and Interne
 * Suggest potential approaches to reduce customer churn
 
 ## Executive Summary
-Telco Co. provided select, historical data on 7,043 customers including an indicator as to whether each customer churned. After analyzing and transforming the data, we optimized several classification models. Each model was trained on 70% of the historical data and then tested on remaining 30% test data. Gradient Boosting Model with **84% Recall and 75% AUC is selected as the best model**
+Telco Co. provided select, historical data on 7,043 customers including an indicator as to whether each customer churned. After analyzing and transforming the data, we optimized several classification models. Each model was trained on 70% of the historical data and then tested on remaining 30% test data. **Gradient Boosting Model with 84% Recall and 75% AUC is selected as the best model**
 
 ### Model Gradient Boost Summary
 
