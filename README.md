@@ -1,5 +1,5 @@
 # Telecom-Customer-Churn
-Predicting customer churn using machine learning and python
+Predicting customer churn using machine learning and python.
 
 # Business Problem
 
