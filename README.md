@@ -140,6 +140,13 @@ In this [notebook](https://github.com/ishita-sadhukhan/Telecom-Customer-Churn/bl
 * Created dummy variables for the categorical features.
 * A correlation figure between churn and other features is produced to understand which features are highly correlated
 
+Based on visualization, here I have created 3 features based on the information we have got from visualization
+
+Grouping Tenure in bins : Can give a visualization on how churning rate looks like over these groups
+Tenure group with only 12 months of tenure and rest to other group : creating another feature out of grouping tenure
+Customers availing multiple online Services- creating a feature tagging how many services does a customer avails
+Highest churning rate among customers using which services
+
 ## Features used for the model
 The important features which are used in building models are Tenure group, Type of Internet Service, Customer's payment type etc.  As we have seen from the data exploration and the correlation graph, these features have significant importance in predicting the probability of customer leaving the company
 
